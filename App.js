@@ -7,24 +7,40 @@ import {
   Text,
   useColorScheme,
   View,
+  Button,
 } from 'react-native';
 import Form from './src/utils/components/Forms';
 import colors from './src/utils/colors';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 export default function App() {
+  const [capital, setCapital] = useState(null);
+  const [interest, setInterest] = useState(null);
+  const [months, setMonths] = useState(null);
+
+  const onSubmit = () => {
+    console.log('capital ->', capital)
+    console.log('interest ->', interest)
+    console.log('months ->', months)
+  }
+
   return(
     <>
     <StatusBar barStyle='light-content'/>
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.background} />
       <Text style={styles.titleApp}>Formulario Head</Text>
-      <Form />
+      <Form 
+        setCapital={setCapital}
+        setInterest={setInterest}
+        setMonths={setMonths}
+      />
     </SafeAreaView>
     <View>
       <Text>Resultado</Text>
     </View>
     <View>
+      <Button title='Enviar' onPress={onSubmit} />
       <Text>Footer</Text>
     </View>
     </>
