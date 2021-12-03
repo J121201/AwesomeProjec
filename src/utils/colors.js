@@ -1,0 +1,5 @@
+export default {
+    PRIMARY_COLOR: '#952F57',
+    PRIMARY_COLOR_DORADO: '#D4AF37',
+    PRIMARY_COLOR_VERDE: '#0F4F41',
+};
