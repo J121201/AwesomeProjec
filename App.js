@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import Form from './src/utils/components/Forms';
 import colors from './src/utils/colors';
+import { useState } from 'react';
 
 export default function App() {
   return(
