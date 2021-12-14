@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -13,7 +13,6 @@ import Form from './src/utils/components/Forms';
 import colors from './src/utils/colors';
 import Footer from './src/utils/components/Footer';
 import Calculoresultado from './src/utils/components/Calculoresultado';
-import calculoresultado from './src/utils/components/Calculoresultado';
 //import { useState } from 'react';
 
 export default function App() {
@@ -22,6 +21,7 @@ export default function App() {
   const [months, setMonths] = useState(null);
   const [total, setTotal] = useState(null);
   const [errorMensaje, setErrorMensaje] = useState('');
+  
 
   const calculate = () => {
     reset();
