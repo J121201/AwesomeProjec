@@ -46,7 +46,7 @@ export default function App() {
     setTotal(null)
   }
 
-  return(
+  //return(
     <>
     <StatusBar barStyle='light-content'/>
     <SafeAreaView style={styles.safeArea}>
